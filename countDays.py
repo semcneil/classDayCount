@@ -9,17 +9,17 @@
 from datetime import datetime, timedelta
 import numpy as np
 
-startDate = datetime.strptime('01/10/2024','%m/%d/%Y')  # can also use the datetime(YYYY,mm,dd) method
-endDate = datetime.strptime('04/26/2024','%m/%d/%Y')  # np.arange does not include last date
+startDate = datetime.strptime('08/26/2024','%m/%d/%Y')  # can also use the datetime(YYYY,mm,dd) method
+endDate = datetime.strptime('12/06/2024','%m/%d/%Y')  # np.arange does not include last date
 dt = timedelta(days=1)
 nonSchoolDays = (
-  datetime(2024,1,15),    # MLK Jr day
-  datetime(2024,2,19),    # Presidents day
-  datetime(2024,3,11),  # Thanksgiving
-  datetime(2024,3,12),  # Thanksgiving
-  datetime(2024,3,13),  # Thanksgiving
-  datetime(2024,3,14),  # Thanksgiving
-  datetime(2024,3,15),  # Thanksgiving
+  datetime(2024,9,2),    # Labor Day
+  datetime(2024,10,10),    # Fall Break
+  datetime(2024,10,11),  # Fall Break
+  datetime(2024,11,11),  # Veterans Day
+  datetime(2024,11,27),  # Thanksgiving
+  datetime(2024,11,28),  # Thanksgiving
+  datetime(2024,11,29),  # Thanksgiving
   )
 
 print(f'School starts: {startDate:%m/%d/%Y}')
